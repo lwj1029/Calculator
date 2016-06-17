@@ -13,6 +13,9 @@
 		CD3605E91D1140DB00874B8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3605E71D1140DB00874B8F /* Main.storyboard */; };
 		CD3605EB1D1140DB00874B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD3605EA1D1140DB00874B8F /* Assets.xcassets */; };
 		CD3605EE1D1140DB00874B8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3605EC1D1140DB00874B8F /* LaunchScreen.storyboard */; };
+		CD3605F91D1239E100874B8F /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3605F61D1239E100874B8F /* Calculator.m */; };
+		CD3605FA1D1239E100874B8F /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3605F81D1239E100874B8F /* Fraction.m */; };
+		CD3605FD1D12861600874B8F /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3605FC1D12861600874B8F /* InfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		CD3605EA1D1140DB00874B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD3605ED1D1140DB00874B8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD3605EF1D1140DB00874B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD3605F51D1239E100874B8F /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		CD3605F61D1239E100874B8F /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		CD3605F71D1239E100874B8F /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		CD3605F81D1239E100874B8F /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
+		CD3605FB1D12861600874B8F /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		CD3605FC1D12861600874B8F /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,10 @@
 		CD3605DD1D1140DB00874B8F /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				CD3605F51D1239E100874B8F /* Calculator.h */,
+				CD3605F61D1239E100874B8F /* Calculator.m */,
+				CD3605F71D1239E100874B8F /* Fraction.h */,
+				CD3605F81D1239E100874B8F /* Fraction.m */,
 				CD3605E11D1140DB00874B8F /* AppDelegate.h */,
 				CD3605E21D1140DB00874B8F /* AppDelegate.m */,
 				CD3605E41D1140DB00874B8F /* ViewController.h */,
@@ -67,6 +80,8 @@
 				CD3605EC1D1140DB00874B8F /* LaunchScreen.storyboard */,
 				CD3605EF1D1140DB00874B8F /* Info.plist */,
 				CD3605DE1D1140DB00874B8F /* Supporting Files */,
+				CD3605FB1D12861600874B8F /* InfoViewController.h */,
+				CD3605FC1D12861600874B8F /* InfoViewController.m */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -150,8 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD3605E61D1140DB00874B8F /* ViewController.m in Sources */,
+				CD3605F91D1239E100874B8F /* Calculator.m in Sources */,
+				CD3605FD1D12861600874B8F /* InfoViewController.m in Sources */,
 				CD3605E31D1140DB00874B8F /* AppDelegate.m in Sources */,
 				CD3605E01D1140DB00874B8F /* main.m in Sources */,
+				CD3605FA1D1239E100874B8F /* Fraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
