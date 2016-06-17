@@ -323,10 +323,10 @@
             </objects>
             <point key="canvasLocation" x="9" y="81"/>
         </scene>
-        <!--New View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="3I1-LO-QTT">
             <objects>
-                <viewController id="nLy-Zb-btI" customClass="NewViewController" sceneMemberID="viewController">
+                <viewController id="nLy-Zb-btI" customClass="ThirdViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cQy-UC-ChJ"/>
                         <viewControllerLayoutGuide type="bottom" id="xHJ-cJ-qVK"/>
@@ -352,6 +352,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gu-jg-ofk">
+                                <rect key="frame" x="113" y="203" width="94" height="30"/>
+                                <state key="normal" title="Change Color"/>
+                                <connections>
+                                    <action selector="changeColor:" destination="nLy-Zb-btI" eventType="touchUpInside" id="vJZ-5F-Qfi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -363,6 +370,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="thirdLabel" destination="Wt5-Hj-QjH" id="m70-Cc-h0R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bgC-ZW-zZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="HhO-Wk-HYp" userLabel="Exit" sceneMemberID="exit"/>
@@ -390,15 +400,18 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ur-eg-nwL">
                                 <rect key="frame" x="146" y="326" width="39" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="c17-fr-E8v"/>
+                                    <constraint firstAttribute="height" constant="30" id="rf8-oi-WO9"/>
                                 </constraints>
                                 <state key="normal" title="Close"/>
                                 <connections>
                                     <action selector="close:" destination="nte-KI-n6y" eventType="touchUpInside" id="cvf-lH-ERq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esb-8q-ASb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esb-8q-ASb">
                                 <rect key="frame" x="118" y="264" width="94" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JI7-yj-ADh"/>
+                                </constraints>
                                 <state key="normal" title="Change Color"/>
                                 <connections>
                                     <action selector="changeColor:" destination="nte-KI-n6y" eventType="touchUpInside" id="bXI-Vu-mXn"/>
@@ -407,12 +420,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="fov-4i-hXV" secondAttribute="trailing" constant="70" id="2eg-dx-Ij7"/>
-                            <constraint firstItem="fov-4i-hXV" firstAttribute="centerX" secondItem="2ur-eg-nwL" secondAttribute="centerX" id="8o4-Om-kHH"/>
-                            <constraint firstItem="2ur-eg-nwL" firstAttribute="top" secondItem="fov-4i-hXV" secondAttribute="bottom" constant="84" id="Qlf-yx-Qpi"/>
-                            <constraint firstItem="fov-4i-hXV" firstAttribute="leading" secondItem="Pc6-Dm-9eV" secondAttribute="leadingMargin" constant="81" id="f7U-AF-wMU"/>
-                            <constraint firstItem="onw-PA-gaw" firstAttribute="top" secondItem="2ur-eg-nwL" secondAttribute="bottom" constant="212" id="mWp-or-ceR"/>
-                            <constraint firstItem="fov-4i-hXV" firstAttribute="top" secondItem="d15-1k-q3c" secondAttribute="bottom" constant="120" id="zye-ak-FJP"/>
+                            <constraint firstItem="esb-8q-ASb" firstAttribute="top" secondItem="fov-4i-hXV" secondAttribute="bottom" constant="22" id="J0d-MK-J1n"/>
+                            <constraint firstItem="fov-4i-hXV" firstAttribute="centerX" secondItem="esb-8q-ASb" secondAttribute="centerX" id="Lyh-3R-WR0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fov-4i-hXV" secondAttribute="trailing" constant="70" id="NHj-lp-2Us"/>
+                            <constraint firstItem="fov-4i-hXV" firstAttribute="leading" secondItem="Pc6-Dm-9eV" secondAttribute="leadingMargin" constant="81" id="P1t-hg-gt5"/>
+                            <constraint firstItem="onw-PA-gaw" firstAttribute="top" secondItem="2ur-eg-nwL" secondAttribute="bottom" constant="212" id="ZdU-rl-PaM"/>
+                            <constraint firstItem="esb-8q-ASb" firstAttribute="centerX" secondItem="2ur-eg-nwL" secondAttribute="centerX" id="hSK-eZ-J8T"/>
+                            <constraint firstItem="2ur-eg-nwL" firstAttribute="top" secondItem="esb-8q-ASb" secondAttribute="bottom" constant="32" id="qNk-sF-ky8"/>
+                            <constraint firstItem="fov-4i-hXV" firstAttribute="top" secondItem="d15-1k-q3c" secondAttribute="bottom" constant="120" id="qR3-kE-P1t"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
